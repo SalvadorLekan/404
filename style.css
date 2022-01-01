@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap");
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2.5rem 5rem;
+  font-family: "Space Mono", monospace;
+  color: #333;
+}
+body > div {
+  min-height: 100vh;
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-rows: auto 1fr auto;
+  max-width: 80rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Inconsolata", monospace;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  /* gap: 8rem; */
+}
+main > * {
+  flex: 1 1 auto;
+  max-width: calc(50% - 4rem);
+  margin: 2rem;
+}
+#cta {
+  display: inline-block;
+  color: #fff;
+  background: #333;
+  padding: 1.5rem 2.5rem;
+}
+img {
+  max-width: 100%;
+}
+#description {
+  color: #4d4d4d;
+  max-width: 400px;
+  margin: 2rem 0;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #bdbdbd;
+}
+footer a {
+  font-weight: bold;
+  color: inherit;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    padding: 1.5rem 1.25rem;
+  }
+  main > * {
+    max-width: 100%;
+    margin: 2rem 0;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
